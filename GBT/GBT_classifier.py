@@ -111,4 +111,3 @@ if __name__ == '__main__':
     score = gbc.score(Xtest, ytest)
     print(score)  # around 81.00%
 
-

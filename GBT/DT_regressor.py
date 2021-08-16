@@ -60,7 +60,7 @@ def best_split_one_feature(X, y, feature):
     for threshold in thresholds:
         left_target = y[X[:, feature] <= threshold]
         right_target = y[X[:, feature] > threshold]
-        new_gain = rss(y) - rss(left_target) - rss(right_target)
+        new_gain = rss(y) - rss(left_target) - rss(right_target)  ###  ？？？？
         if new_gain > best_gain:
             best_threshold = threshold
             best_gain = new_gain
